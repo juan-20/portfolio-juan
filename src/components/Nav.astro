@@ -2,6 +2,7 @@
 import Icon from "./Icon.astro";
 import ThemeToggle from "./ThemeToggle.astro";
 import type { iconPaths } from "./IconPaths";
+import SelectLanguage from "./SelectLanguage.astro";
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
@@ -87,6 +88,9 @@ const iconLinks: {
 
       <div class="theme-toggle">
         <ThemeToggle />
+      </div>
+      <div class="">
+        <SelectLanguage />
       </div>
     </div>
   </div>
