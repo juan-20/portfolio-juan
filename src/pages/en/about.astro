@@ -1,8 +1,13 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
-import ContactCTA from "../components/ContactCTA.astro";
-import Hero from "../components/Hero.astro";
+import ContactCTA from "../../components/ContactCTA.astro";
+import Hero from "../../components/Hero.astro";
+
+import { pegarLangDeURL, usarTraducoes } from "../../i18n/utils";
+
+const lang = pegarLangDeURL(Astro.url);
+const t = usarTraducoes(lang);
 ---
 
 <BaseLayout
@@ -12,15 +17,15 @@ import Hero from "../components/Hero.astro";
   <div class="stack gap-20">
     <main class="wrapper about">
       <Hero
-        title="About"
-        tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+        title={t("about.title")}
+        tagline="Leia abaixo para saber mais sobre meu background e experiência profissional."
       >
-        <img
+        <!-- <img
           width="1553"
           height="873"
           src="/assets/at-work.jpg"
           alt="Juan Andrade at work with a colleague"
-        />
+        /> -->
       </Hero>
 
       <section>

@@ -5,11 +5,11 @@ import type { iconPaths } from "./IconPaths";
 import SelectLanguage from "./SelectLanguage.astro";
 
 /** Main menu items */
-const textLinks: { label: string; href: string }[] = [
-  { label: "Home", href: "/" },
-  { label: "Work", href: "/work/" },
-  { label: "About", href: "/about/" },
-];
+// const textLinks: { label: string; href: string }[] = [
+//   { label: "Home", href: `/${lang}` },
+//   { label: "Work", href: `${lang}/work` },
+//   { label: "About", href: `${lang}/about` },
+// ];
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: {
@@ -29,6 +29,11 @@ const iconLinks: {
     icon: "linkedin-logo",
   },
 ];
+
+import { pegarLangDeURL, usarTraducoes } from "../i18n/utils";
+
+const lang = pegarLangDeURL(Astro.url);
+const t = usarTraducoes(lang);
 ---
 
 <nav>
@@ -53,26 +58,63 @@ const iconLinks: {
   </div>
   <div id="menu-content">
     <ul class="nav-items">
-      {
-        textLinks.map(({ label, href }) => (
-          <li>
-            <a
-              aria-current={Astro.url.pathname === href}
-              class:list={[
-                "link",
-                {
-                  active:
-                    Astro.url.pathname === href ||
-                    (href !== "/" && Astro.url.pathname.startsWith(href)),
-                },
-              ]}
-              href={href}
-            >
-              {label}
-            </a>
-          </li>
-        ))
-      }
+      <li>
+        <a
+          aria-current={Astro.url.pathname === t("nav.link.home")}
+          class:list={[
+            "link",
+            {
+              active:
+                Astro.url.pathname === t("nav.link.home") ||
+                (t("nav.link.home") !== "/pt" &&
+                  t("nav.link.home") !== "/en") ||
+                ("/pt" && Astro.url.pathname.endsWith(t("nav.link.home"))),
+            },
+          ]}
+          href={t("nav.link.home")}
+        >
+          {t("nav.text.home")}
+        </a>
+      </li>
+
+      <li>
+        <a
+          aria-current={Astro.url.pathname === t("nav.link.work")}
+          class:list={[
+            "link",
+            {
+              active:
+                Astro.url.pathname === t("nav.link.work") ||
+                (t("nav.link.work") !== "/pt/work" &&
+                  t("nav.link.work") !== "/en/work") ||
+                ("/pt/work" && Astro.url.pathname.endsWith(t("nav.link.work"))),
+            },
+          ]}
+          href={t("nav.link.work")}
+        >
+          {t("nav.text.work")}
+        </a>
+      </li>
+
+      <li>
+        <a
+          aria-current={Astro.url.pathname === t("nav.link.about")}
+          class:list={[
+            "link",
+            {
+              active:
+                Astro.url.pathname === t("nav.link.about") ||
+                (t("nav.link.about") !== "/pt/about" &&
+                  t("nav.link.about") !== "/en/about") ||
+                ("/pt/about" &&
+                  Astro.url.pathname.endsWith(t("nav.link.about"))),
+            },
+          ]}
+          href={t("nav.link.about")}
+        >
+          {t("nav.text.about")}
+        </a>
+      </li>
     </ul>
     <div class="menu-footer">
       <div class="socials">
