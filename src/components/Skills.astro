@@ -1,5 +1,10 @@
 ---
 import Icon from "./Icon.astro";
+
+import { pegarLangDeURL, usarTraducoes } from "../i18n/utils";
+
+const lang = pegarLangDeURL(Astro.url);
+const t = usarTraducoes(lang);
 ---
 
 <section class="box skills">
@@ -10,18 +15,16 @@ import Icon from "./Icon.astro";
       size="2.5rem"
       gradient
     />
-    <h2>Full Stack</h2>
+    <h2>{t("skills.first")}</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+      {t("skills.first.about")}
     </p>
   </div>
   <div class="stack gap-2 lg:gap-4">
-    <Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-    <h2>Cooperative</h2>
+    <Icon icon="heart" color="var(--accent-regular)" size="2.5rem" gradient />
+    <h2>{t("skills.second")}</h2>
     <p>
-      Adept at working harmoniously within diverse groups to achieve shared
-      goals. Strong communication and interpersonal skills facilitate seamless
-      cooperation and productive partnerships.
+      {t("skills.second.about")}
     </p>
   </div>
   <div class="stack gap-2 lg:gap-4">
@@ -31,8 +34,8 @@ import Icon from "./Icon.astro";
       size="2.5rem"
       gradient
     />
-    <h2>Strategy-Minded</h2>
-    <p>Urna porttitor rhoncus dolor purus non enim praesent ornare.</p>
+    <h2>{t("skills.third")}</h2>
+    <p>{t("skills.third.about")}</p>
   </div>
 </section>
 
