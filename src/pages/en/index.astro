@@ -4,6 +4,11 @@ import { getCollection } from "astro:content";
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
+import { pegarLangDeURL, usarTraducoes } from "../../i18n/utils";
+
+const lang = pegarLangDeURL(Astro.url);
+const t = usarTraducoes(lang);
+
 // Component Imports
 import CallToAction from "../../components/CallToAction.astro";
 import Grid from "../../components/Grid.astro";
@@ -65,7 +70,17 @@ const projects = (await getCollection("work"))
             {
               projects.map((project) => (
                 <li>
-                  <PortfolioPreview project={project} />
+                  {project.data.language === lang ? (
+                    <a class="card" href={`/${lang}/work/${project.slug}`}>
+                      <span class="title">{project.data.title}</span>
+                      <img
+                        src={project.data.img}
+                        alt={project.data.img_alt || ""}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </a>
+                  ) : null}
                 </li>
               ))
             }

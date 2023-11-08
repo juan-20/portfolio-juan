@@ -13,15 +13,19 @@ const lang = pegarLangDeURL(Astro.url);
 const t = usarTraducoes(lang);
 ---
 
-<a class="card" href={`/${lang}/work/${slug}`}>
-  <span class="title">{data.title}</span>
-  <img
-    src={data.img}
-    alt={data.img_alt || ""}
-    loading="lazy"
-    decoding="async"
-  />
-</a>
+{
+  data.language === lang ? (
+    <a class="card" href={`/${lang}/work/${slug}`}>
+      <span class="title">{data.title}</span>
+      <img
+        src={data.img}
+        alt={data.img_alt || ""}
+        loading="lazy"
+        decoding="async"
+      />
+    </a>
+  ) : null
+}
 
 <style>
   .card {

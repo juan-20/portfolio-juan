@@ -3,6 +3,7 @@ title: Next.js Blog with prisma
 publishDate: 2019-12-01 00:00:00
 img: /assets/1.jpg
 img_alt: Logo of next 13, prisma, tailwindcss, vercel, and tanstack query
+language: en
 description: |
   A modern, performant, and customizable blog built with Next.js 13, Tailwind CSS, Vercel, Prisma, and TanStack Query.
 tags:
