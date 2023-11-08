@@ -4,6 +4,11 @@ import { getCollection } from "astro:content";
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
+import { pegarLangDeURL, usarTraducoes } from "../../i18n/utils";
+
+const lang = pegarLangDeURL(Astro.url);
+const t = usarTraducoes(lang);
+
 // Component Imports
 import CallToAction from "../../components/CallToAction.astro";
 import Grid from "../../components/Grid.astro";
@@ -30,17 +35,17 @@ const projects = (await getCollection("work"))
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
         <Hero
-          title="Hello, my name is Juan Andrade"
-          tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+          title="Olá, meu nome é Juan Andrade"
+          tagline="Sou um desenvoledor web e mobile, apaixonado por tecnologia e inovação."
           align="start"
         >
           <div class="roles">
-            <Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
+            <Pill><Icon icon="code" size="1.33em" /> Desenvolvedor</Pill>
           </div>
         </Hero>
 
         <img
-          alt="Juan Andrade smiling in front of a white background with a black hoddie."
+          alt="Juan Andrade sorrindo para a câmera com uma blusa preta e um fundo branco"
           width="480"
           height="620"
           src="/assets/portrait.jpg"
@@ -60,11 +65,13 @@ const projects = (await getCollection("work"))
         <div class="gallery">
           <Grid variant="offset">
             {
-              projects.map((project) => (
-                <li>
-                  <PortfolioPreview project={project} />
-                </li>
-              ))
+              projects.map((project) =>
+                project.data.language === lang ? (
+                  <li>
+                    <PortfolioPreview project={project} />
+                  </li>
+                ) : null
+              )
             }
           </Grid>
         </div>

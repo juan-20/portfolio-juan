@@ -8,6 +8,11 @@ import PortfolioPreview from "../../components/PortfolioPreview.astro";
 import Hero from "../../components/Hero.astro";
 import Grid from "../../components/Grid.astro";
 
+import { pegarLangDeURL, usarTraducoes } from "../../i18n/utils";
+
+const lang = pegarLangDeURL(Astro.url);
+const t = usarTraducoes(lang);
+
 const projects = (await getCollection("work")).sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
@@ -26,11 +31,13 @@ const projects = (await getCollection("work")).sort(
       />
       <Grid variant="offset">
         {
-          projects.map((project) => (
-            <li>
-              <PortfolioPreview project={project} />
-            </li>
-          ))
+          projects.map((project) =>
+            project.data.language === lang ? (
+              <li>
+                <PortfolioPreview project={project} />
+              </li>
+            ) : null
+          )
         }
       </Grid>
     </main>

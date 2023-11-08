@@ -36,7 +36,7 @@ const projects = (await getCollection("work"))
       <header class="hero">
         <Hero
           title="Hello, my name is Juan Andrade"
-          tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+          tagline="I am a Creative Developer based in Brazil."
           align="start"
         >
           <div class="roles">
@@ -68,21 +68,13 @@ const projects = (await getCollection("work"))
         <div class="gallery">
           <Grid variant="offset">
             {
-              projects.map((project) => (
-                <li>
-                  {project.data.language === lang ? (
-                    <a class="card" href={`/${lang}/work/${project.slug}`}>
-                      <span class="title">{project.data.title}</span>
-                      <img
-                        src={project.data.img}
-                        alt={project.data.img_alt || ""}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </a>
-                  ) : null}
-                </li>
-              ))
+              projects.map((project) =>
+                project.data.language === lang ? (
+                  <li>
+                    <PortfolioPreview project={project} />
+                  </li>
+                ) : null
+              )
             }
           </Grid>
         </div>
