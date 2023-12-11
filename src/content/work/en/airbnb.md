@@ -3,7 +3,7 @@ title: Airbnb UI Clone
 publishDate: 2019-12-01 00:00:00
 img: /assets/3.jpg
 img_alt: Logo of next 13 and tailwindcss
-language: pt
+language: en
 description: |
   A copy of the design of the famous airbnb website made in a modern way.
 tags:
