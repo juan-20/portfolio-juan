@@ -5,7 +5,7 @@ img: /assets/4.jpg
 img_alt: Logo of next 13, prisma, tailwindcss, vercel, and tanstack query
 language: en
 description: |
-  A modern, performant, and customizable blog built with Next.js 13, Tailwind CSS, Vercel, Prisma, and TanStack Query.
+  A modern ecommerce using good pratices of SEO and online payment.
 tags:
   - Next 13
   - Tailwindcss
@@ -26,3 +26,10 @@ Our e-commerce project is designed to offer a modern, high-performance, and cust
 - Stripe Integration: Seamlessly handle payments and transactions with Stripe, one of the world's leading payment processors, ensuring a secure and reliable payment experience for your customers.
 
 - Sanity CMS: Streamline content management and product information with Sanity, providing a headless CMS that allows for easy content creation and management.
+
+## Links
+
+Under development 🚧
+
+- [Demo](https://ecommerce-cms-liart.vercel.app/)
+- [Repo](https://github.com/juan-20/Ecommerce-CMS)

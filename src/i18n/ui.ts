@@ -29,6 +29,8 @@ export const ui = {
 
     "contact.title": "Interested in working together?",
     "contact.button": "Send me a message",
+
+    "theme.button": "Change theme",
   },
   pt: {
     "nav.link.home": "/pt",
@@ -54,5 +56,6 @@ export const ui = {
 
     "contact.title": "Interessado em trabalhar juntos?",
     "contact.button": "Mande uma mensagem",
+    "theme.button": "Mudar tema",
   },
 } as const;

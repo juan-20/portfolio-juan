@@ -5,7 +5,7 @@ img: /assets/4.jpg
 img_alt: Logo of next 13, prisma, tailwindcss, vercel, and tanstack query
 language: pt
 description: |
-  A modern, performant, and customizable blog built with Next.js 13, Tailwind CSS, Vercel, Prisma, and TanStack Query.
+  Um moderno ecommerce usando CMS. Em desenvolvimento 🚧.
 tags:
   - Next 13
   - Tailwindcss
@@ -15,14 +15,21 @@ tags:
 
 ## Project Overview
 
-Our e-commerce project is designed to offer a modern, high-performance, and customizable online shopping experience. With a robust tech stack, it provides a seamless development workflow and an exceptional user interface, making it the ideal solution for building and managing your online store.
+Nosso projeto de e-commerce foi pensado para oferecer uma experiência de compra online moderna, de alto desempenho e personalizável. Com uma pilha de tecnologia robusta, fornece um fluxo de trabalho de desenvolvimento contínuo e uma interface de usuário excepcional, tornando-o a solução ideal para construir e gerenciar sua loja online.
 
 ## Key Features
 
-- Next.js 13: Leverage the latest features and performance improvements in Next.js, ensuring fast load times and an outstanding developer experience.
+- Next.js 13: aproveite os recursos e melhorias de desempenho mais recentes do Next.js, garantindo tempos de carregamento rápidos e uma excelente experiência para o desenvolvedor.
 
-- Tailwind CSS: Create stunning and responsive user interfaces with the utility-first CSS framework, making it simple to design and brand your e-commerce site.
+- Tailwind CSS: Crie interfaces de usuário impressionantes e responsivas com a estrutura CSS utilitária, simplificando o design e a marca do seu site de comércio eletrônico.
 
-- Stripe Integration: Seamlessly handle payments and transactions with Stripe, one of the world's leading payment processors, ensuring a secure and reliable payment experience for your customers.
+- Integração Stripe: administre pagamentos e transações perfeitamente com Stripe, um dos processadores de pagamento líderes mundiais, garantindo uma experiência de pagamento segura e confiável para seus clientes.
 
-- Sanity CMS: Streamline content management and product information with Sanity, providing a headless CMS that allows for easy content creation and management.
+- Sanity CMS: Simplifique o gerenciamento de conteúdo e informações de produtos com Sanity, fornecendo um CMS headless que permite fácil criação e gerenciamento de conteúdo.
+
+## Links
+
+Em desenvolvimento 🚧
+
+- [Demo](https://ecommerce-cms-liart.vercel.app/)
+- [Repo](https://github.com/juan-20/Ecommerce-CMS)

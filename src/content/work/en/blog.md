@@ -16,16 +16,18 @@ tags:
 
 ## Project Overview
 
-This blog is designed to provide a modern, performant, and customizable platform for content creators, bloggers, and developers. With a cutting-edge tech stack, it offers a seamless development experience and an exceptional user interface.
+This application uses technologies such as Prisma which is an ORM for databases, Next.js which is a framework for React, Tailwindcss which is a css framework, TanStack Query which is a library for state management.
+The project consists of a blog, where the user can create, edit and delete posts. All changes are saved in the database.
 
 ## Key Features
 
-- Next.js 13: Harness the latest features and performance enhancements of Next.js, ensuring fast loading times and an excellent developer experience.
+- ✅ Next.js 13: SEO and performance for each page.
+- ✨ Tailwind CSS: Responsive and modern styling.
+- ⚡ Prisma: Fast database.
+- 🔥 TanStack Query: State and cache management.
+- 🚀 Vercel: Deployment and hosting.
 
-- Tailwind CSS: Craft visually appealing and responsive user interfaces with the power of utility-first CSS, making it easy to style your blog.
+## Links
 
-- Vercel Integration: Deploy and host your blog effortlessly with Vercel, offering a hassle-free development-to-production workflow.
-
-- Prisma: Connect to your preferred database and simplify database operations with Prisma, ensuring efficient data handling.
-
-- TanStack Query: Supercharge data fetching and state management with TanStack Query, optimizing your blog's performance and responsiveness.
+- [Demo](https://blog-prisma-wine.vercel.app/)
+- [Repo](https://github.com/juan-20/Blog-prisma)
