@@ -10,61 +10,46 @@ const lang = pegarLangDeURL(Astro.url);
 const t = usarTraducoes(lang);
 ---
 
-<BaseLayout
-  title="About | Juan Andrade"
-  description="About Juan Andrade Lorem Ipsum"
->
+<BaseLayout title="About | Juan Andrade" description="About Juan Andrade">
   <div class="stack gap-20">
     <main class="wrapper about">
       <Hero
         title={t("about.title")}
-        tagline="Leia abaixo para saber mais sobre meu background e experiência profissional."
-      >
-        <!-- <img
-          width="1553"
-          height="873"
-          src="/"
-          alt="Juan Andrade at work with a colleague"
-        /> -->
-      </Hero>
+        tagline="Read below to learn more about my background and professional experience."
+      />
 
       <section>
         <h2 class="section-title">Background</h2>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a>
-            makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum
-            vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra
-            diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus
-            in ornare.
+            I started programming in 2018 while studying high school with a
+            technical degree. Web/mobile development at <a
+              href="https://www.cotemig.com.br/">Cotemig</a
+            >.
           </p>
           <p>
-            Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget
-            gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat
-            pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh
-            venenatis cras sed felis eget velit. Id diam vel quam elementum
-            pulvinar etiam non.
-          </p>
-          <p>
-            Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut
-            sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor
-            posuere ac ut consequat semper viverra. Viverra accumsan in nisl
-            nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-            pretium fusce.
+            In 2020 I started doing an internship as a front-end developer where
+            programmed in Angular, React using agile development and using
+            DevOPS. In 2022 I was hired and have also been working with tests.
           </p>
         </div>
       </section>
       <section>
         <h2 class="section-title">Education</h2>
         <div class="content">
-          <p>Corporis voluptates tenetur laudantium.</p>
+          <p>Colégio COTEMIG - Web/mobile development - 2018-2020.</p>
+          <p>
+            Faculdade PUC Minas - Analysis and systems development - 2023-2025
+          </p>
         </div>
       </section>
       <section>
         <h2 class="section-title">Skills</h2>
         <div class="content">
-          <p>officia unde omnis</p>
+          <p>
+            Javascript, Typescript, DevOPS, CI/CD, e2e, Node, Next/React,
+            Angular, MySQl, NoSql, Docker, Git, Scrum, Kanban, Jira, Confluence,
+          </p>
         </div>
       </section>
     </main>
