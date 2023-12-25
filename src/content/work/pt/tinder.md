@@ -2,32 +2,31 @@
 title: TInder Clone
 publishDate: 2019-12-01 00:00:00
 img: /assets/2.jpg
-img_alt: Logo of next 13, prisma, tailwindcss, vercel, and tanstack query
+img_alt: Logo of React Native, tailwindcss, expo, firebase
 language: pt
 description: |
-  A modern ecommerce using good pratices of SEO and online payment.
+Um clone do Tinder com funcionalidade de deslizar, combinar e conversar.
 tags:
-  - Next 13
+  - React Native
   - Tailwindcss
-  - Stripe
-  - Sanity
+  - Expo
+  - Firebase
 ---
 
 ## Project Overview
 
-This project is a kanban board to manage tasks. You can change the status of the task, add new tasks, edit and delete tasks. You can also drag and drop the tasks to change the status. You can also change the colors of the tasks to organize them and create new lists. The tasks are saved in the local storage.
+Este projeto é um clone do tinder com funcionalidade de deslizar e dar match e conversar. Foi feito usando React Native, Tailwindcss, Expo e Firebase. O aplicativo é responsivo e funciona em Android e IOS. O aplicativo usa o firebase para armazenar os dados e o expo para compilar o aplicativo. O aplicativo também usa o tailwindcss para estilizar o aplicativo.
 
 ## Key Features
 
-- Next.js 13: Leverage the latest features and performance improvements in Next.js, ensuring fast load times and an outstanding developer experience.
+- React Native: Crie interfaces de usuário impressionantes e responsivas com a estrutura CSS que prioriza a utilidade, simplificando o design e a marca do seu site de comércio eletrônico.
 
-- Tailwind CSS: Create stunning and responsive user interfaces with the utility-first CSS framework, making it simple to design and brand your e-commerce site.
+- Tailwind CSS: Crie interfaces de usuário impressionantes e responsivas com a estrutura CSS utilitária, simplificando o design e a marca do seu site de comércio eletrônico.
 
-- Stripe Integration: Seamlessly handle payments and transactions with Stripe, one of the world's leading payment processors, ensuring a secure and reliable payment experience for your customers.
+- Expo: administre pagamentos e transações perfeitamente com Stripe, um dos principais processadores de pagamentos do mundo, garantindo uma experiência de pagamento segura e confiável para seus clientes.
 
-- Sanity CMS: Streamline content management and product information with Sanity, providing a headless CMS that allows for easy content creation and management.
+- Firebase: Simplifique o gerenciamento de conteúdo e informações de produtos com Sanity, fornecendo um CMS headless que permite fácil criação e gerenciamento de conteúdo.
 
 ## Links
 
-- [Demo](https://kanban-dusky-five.vercel.app/)
-- [Repo](https://github.com/juan-20/Kanban)
+- [Repo](https://github.com/juan-20/Tinder-clone)
