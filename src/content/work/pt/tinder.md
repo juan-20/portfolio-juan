@@ -3,7 +3,6 @@ title: Tinder Clone
 publishDate: 2020-08-01 00:00:00
 img: /assets/2.jpg
 img_alt: Logo of React Native, tailwindcss, expo, firebase
-img_alt: Logo of React Native, tailwindcss, expo, firebase
 language: pt
 description: |
   Um clone do Tinder com swipe, match e chat.

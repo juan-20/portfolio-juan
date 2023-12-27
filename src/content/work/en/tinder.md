@@ -3,19 +3,14 @@ title: Tinder clone
 publishDate: 2020-08-01 00:00:00
 img: /assets/2.jpg
 img_alt: Logo of React Native, tailwindcss, expo, firebase
-img_alt: Logo of React Native, tailwindcss, expo, firebase
 language: en
 description: |
-  An clone of tinder with functionality of swipe and match and chat.
   An clone of tinder with functionality of swipe and match and chat.
 tags:
   - React Native
   - Tailwindcss
   - Expo
   - Firebase
-  - tailwindcss
-  - expo
-  - firebase
 ---
 
 ## Project Overview
